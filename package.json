@@ -1,0 +1,21 @@
+{
+  "name": "auto-music",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "install:all": "npm.cmd install --workspaces",
+    "dev:frontend": "npm.cmd --workspace frontend run dev",
+    "dev:gateway": "npm.cmd --workspace backend run start:gateway",
+    "dev:catalog": "npm.cmd --workspace backend run start:catalog",
+    "dev:content": "npm.cmd --workspace backend run start:content",
+    "dev:users": "npm.cmd --workspace backend run start:users",
+    "build": "npm.cmd --workspace frontend run build && npm.cmd --workspace backend run build",
+    "docker:up": "docker compose up --build",
+    "docker:down": "docker compose down"
+  }
+}
+

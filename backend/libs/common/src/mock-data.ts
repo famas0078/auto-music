@@ -1,0 +1,285 @@
+import { Guarantee, Product, Testimonial } from './contracts';
+
+export const guarantees: Guarantee[] = [
+  {
+    title: 'Высокое качество продукции',
+    description:
+      'Подбираем оборудование только из проверенных линеек, чтобы вы были уверены в надежности каждой системы.',
+    icon: '✓',
+  },
+  {
+    title: 'Широкий выбор товаров и услуг',
+    description:
+      'От усилителей и динамиков до сабвуферов и готовых сетапов с консультацией по установке.',
+    icon: '♫',
+  },
+  {
+    title: 'Доставка и установка в удобное время',
+    description:
+      'Помогаем спланировать доставку и монтаж так, чтобы апгрейд звука встроился в ваш график.',
+    icon: '◔',
+  },
+];
+
+export const newProducts: Product[] = [
+  {
+    id: 'prod-ml-12r-d2',
+    slug: 'machete-lite-ml-12r-d2',
+    title: 'Сабвуфер Machete Lite ML-12R D2',
+    price: '4 792 ₽',
+    priceValue: 4792,
+    oldPrice: '6 390 ₽',
+    oldPriceValue: 6390,
+    discount: '-25%',
+    theme: 'subwoofer',
+    category: 'subwoofers',
+    brand: 'Machete',
+    series: 'Lite',
+    inStock: true,
+    badge: 'Новинка',
+    shortDescription: 'Компактный сабвуфер для плотного баса и ежедневного прослушивания.',
+    description:
+      'Сабвуфер серии Lite рассчитан на уверенный повседневный бас, аккуратную установку и стабильную работу в городском режиме.',
+    specs: [
+      { label: 'Диаметр', value: '12"' },
+      { label: 'Сопротивление', value: 'D2' },
+      { label: 'Мощность RMS', value: '500 Вт' },
+      { label: 'Чувствительность', value: '86 дБ' },
+    ],
+    imageKey: 'image-4',
+  },
+  {
+    id: 'prod-al-165t',
+    slug: 'machete-al-165t',
+    title: 'Machete AL-165T',
+    price: '2 392 ₽',
+    priceValue: 2392,
+    oldPrice: '3 190 ₽',
+    oldPriceValue: 3190,
+    discount: '-25%',
+    theme: 'mono',
+    category: 'speakers',
+    brand: 'Machete',
+    series: 'AL',
+    inStock: true,
+    badge: 'Твитер',
+    shortDescription: 'Высокочастотный динамик для яркого и читаемого фронта.',
+    description:
+      'Комплект рассчитан на чистую передачу верхнего диапазона и хорошо сочетается с большинством повседневных конфигураций.',
+    specs: [
+      { label: 'Тип', value: 'Твитер' },
+      { label: 'Номинальная мощность', value: '50 Вт' },
+      { label: 'Частотный диапазон', value: '3.5–20 кГц' },
+      { label: 'Материал мембраны', value: 'Шелк' },
+    ],
+    imageKey: 'image-6',
+  },
+  {
+    id: 'prod-db-sa272-d1',
+    slug: 'apocalypse-db-sa272-d1',
+    title: 'Сабвуфер Apocalypse DB-SA272 D1',
+    price: '13 492 ₽',
+    priceValue: 13492,
+    oldPrice: '17 990 ₽',
+    oldPriceValue: 17990,
+    discount: '-25%',
+    theme: 'duo',
+    category: 'subwoofers',
+    brand: 'Apocalypse',
+    series: 'DB',
+    inStock: true,
+    badge: 'Хит',
+    shortDescription: 'Мощный сабвуфер для громких повседневных и соревновательных систем.',
+    description:
+      'Модель рассчитана на серьезную отдачу по давлению, уверенно работает в правильно подготовленном коробе и раскрывает потенциал тяжелых сетапов.',
+    specs: [
+      { label: 'Диаметр', value: '12"' },
+      { label: 'Сопротивление', value: 'D1' },
+      { label: 'Мощность RMS', value: '1500 Вт' },
+      { label: 'Монтажная глубина', value: '190 мм' },
+    ],
+    imageKey: 'image-7',
+  },
+];
+
+export const weeklyProducts: Product[] = [
+  {
+    id: 'prod-aap-800',
+    slug: 'apocalypse-aap-800-1d-atom-plus',
+    title: '1-канальный усилитель Apocalypse AAP-800.1D Atom Plus',
+    price: '8 690 ₽',
+    priceValue: 8690,
+    theme: 'mono',
+    category: 'amplifiers',
+    brand: 'Apocalypse',
+    series: 'Atom Plus',
+    inStock: true,
+    badge: 'Неделя',
+    shortDescription: 'Моноблок для сабвуферного канала с уверенной тягой и компактным корпусом.',
+    description:
+      'Одноканальный усилитель для сабвуферных систем, рассчитанный на плотный контроль НЧ и аккуратное размещение в багажнике.',
+    specs: [
+      { label: 'Класс', value: 'D' },
+      { label: 'Каналы', value: '1' },
+      { label: 'Мощность RMS @ 1 Ом', value: '800 Вт' },
+      { label: 'Фильтр НЧ', value: 'Есть' },
+    ],
+    imageKey: 'image-9',
+  },
+  {
+    id: 'prod-ap-m61se',
+    slug: 'apocalypse-ap-m61se',
+    title: 'Apocalypse AP-M61SE',
+    price: '4 590 ₽',
+    priceValue: 4590,
+    theme: 'duo',
+    category: 'speakers',
+    brand: 'Apocalypse',
+    series: 'M61',
+    inStock: true,
+    badge: 'Неделя',
+    shortDescription: 'Среднечастотные динамики с агрессивной подачей и хорошей отдачей.',
+    description:
+      'Эта пара хорошо подходит для громкого фронта и уверенно держит нагрузку в активных и пассивных конфигурациях.',
+    specs: [
+      { label: 'Размер', value: '6.5"' },
+      { label: 'Мощность RMS', value: '150 Вт' },
+      { label: 'Сопротивление', value: '4 Ом' },
+      { label: 'Чувствительность', value: '93 дБ' },
+    ],
+    imageKey: 'image-10',
+  },
+  {
+    id: 'prod-audison-bit-one',
+    slug: 'audison-bit-one-hd',
+    title: 'Audison bit One HD',
+    price: '31 990 ₽',
+    priceValue: 31990,
+    theme: 'placeholder',
+    category: 'processors',
+    brand: 'Audison',
+    series: 'bit',
+    inStock: false,
+    badge: 'Под заказ',
+    shortDescription: 'Процессор для точной настройки сцены, срезов и временных задержек.',
+    description:
+      'DSP-процессор для построения сценических конфигураций с детальной настройкой каналов и пресетов.',
+    specs: [
+      { label: 'Каналы обработки', value: '8' },
+      { label: 'Bluetooth', value: 'Опционально' },
+      { label: 'Пресеты', value: 'Да' },
+      { label: 'Состояние', value: 'Под заказ' },
+    ],
+  },
+  {
+    id: 'prod-pride-solo-300',
+    slug: 'pride-solo-300',
+    title: 'Pride Solo 300',
+    price: '5 990 ₽',
+    priceValue: 5990,
+    oldPrice: '6 890 ₽',
+    oldPriceValue: 6890,
+    discount: '-13%',
+    theme: 'placeholder',
+    category: 'speakers',
+    brand: 'Pride',
+    series: 'Solo',
+    inStock: true,
+    badge: 'Эстрада',
+    shortDescription: 'Эстрадный динамик для громкого фронта.',
+    description:
+      'Подходит для активных фронтов и проектов, где важна отдача по громкости без потери читаемости.',
+    specs: [
+      { label: 'Размер', value: '8"' },
+      { label: 'Мощность RMS', value: '300 Вт' },
+      { label: 'Сопротивление', value: '4 Ом' },
+      { label: 'Чувствительность', value: '95 дБ' },
+    ],
+  },
+];
+
+export const catalogProducts: Product[] = [
+  ...newProducts,
+  ...weeklyProducts,
+  {
+    id: 'prod-ural-bv-neo',
+    slug: 'ural-bv-neo-4-100',
+    title: 'Урал BV Neo 4.100',
+    price: '11 490 ₽',
+    priceValue: 11490,
+    theme: 'placeholder',
+    category: 'amplifiers',
+    brand: 'Урал',
+    series: 'BV Neo',
+    inStock: true,
+    badge: '4 канала',
+    shortDescription: 'Четырехканальный усилитель для фронта и тыла.',
+    description:
+      'Удобный вариант для систем, где нужно собрать фронт, тыл или мост на сабвуфер без лишних компромиссов.',
+    specs: [
+      { label: 'Каналы', value: '4' },
+      { label: 'Мощность RMS @ 4 Ом', value: '4 x 100 Вт' },
+      { label: 'Класс', value: 'AB' },
+      { label: 'Фильтры', value: 'HPF/LPF' },
+    ],
+  },
+  {
+    id: 'prod-hertz-dbx-252',
+    slug: 'hertz-dbx-252-3',
+    title: 'Hertz DBX 252.3',
+    price: '14 790 ₽',
+    priceValue: 14790,
+    theme: 'placeholder',
+    category: 'subwoofers',
+    brand: 'Hertz',
+    series: 'DBX',
+    inStock: false,
+    badge: 'Корпусной',
+    shortDescription: 'Готовый корпусной сабвуфер для быстрого апгрейда.',
+    description:
+      'Сбалансированное решение для тех, кто хочет добавить низких частот без сложной кастомной инсталляции.',
+    specs: [
+      { label: 'Тип', value: 'Корпусной' },
+      { label: 'Размер', value: '10"' },
+      { label: 'Мощность RMS', value: '300 Вт' },
+      { label: 'Состояние', value: 'Нет в наличии' },
+    ],
+  },
+  {
+    id: 'prod-kenwood-kfc-xs',
+    slug: 'kenwood-kfc-xs174',
+    title: 'Kenwood KFC-XS174',
+    price: '7 290 ₽',
+    priceValue: 7290,
+    theme: 'placeholder',
+    category: 'speakers',
+    brand: 'Kenwood',
+    series: 'XS',
+    inStock: true,
+    badge: 'Коаксиал',
+    shortDescription: 'Коаксиальная акустика для чистой замены штатной системы.',
+    description:
+      'Модель подходит для аккуратного апгрейда повседневного автомобиля и приятной подачи на средних громкостях.',
+    specs: [
+      { label: 'Тип', value: 'Коаксиальная' },
+      { label: 'Размер', value: '17 см' },
+      { label: 'Мощность RMS', value: '80 Вт' },
+      { label: 'Чувствительность', value: '89 дБ' },
+    ],
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    name: 'Михеев Даниэль',
+    role: 'Постоянный клиент',
+    quote:
+      'Качество потрясающее: после установки стало слышно каждую деталь, а подбор оборудования занял совсем немного времени.',
+  },
+  {
+    name: 'Короткова София',
+    role: 'Любитель автозвука',
+    quote:
+      'Каждую неделю смотрю подборку и почти всегда нахожу что-то интересное по цене ниже розничной. Очень рекомендую.',
+  },
+];

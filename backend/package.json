@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "nest build",
+    "start:gateway": "nest start api-gateway --watch",
+    "start:catalog": "nest start catalog-service --watch",
+    "start:content": "nest start content-service --watch",
+    "start:users": "nest start users-service --watch",
+    "start:prod:gateway": "node dist/apps/api-gateway/src/main.js",
+    "start:prod:catalog": "node dist/apps/catalog-service/src/main.js",
+    "start:prod:content": "node dist/apps/content-service/src/main.js",
+    "start:prod:users": "node dist/apps/users-service/src/main.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/core": "^11.0.1",
+    "@nestjs/microservices": "^11.0.1",
+    "@nestjs/platform-express": "^11.0.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "pg": "^8.16.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.5",
+    "@nestjs/schematics": "^11.0.1",
+    "@types/node": "^22.15.29",
+    "@types/pg": "^8.15.2",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.3"
+  }
+}
